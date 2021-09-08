@@ -1,5 +1,6 @@
 class Stationery:
     def __init__(self, title):
+    self.title = title
 
     def draw(self):
         print('Запуск отрисовки')
@@ -20,9 +21,9 @@ class Handle(Stationery):
         print('Запуск отрисовки маркером')
 
 
-mypen = Pen
-mypencil = Pencil
-myhandle = Handle
+mypen = Pen('A')
+mypencil = Pencil('B')
+myhandle = Handle('C')
 
 mypen.draw()
 mypencil.draw()
